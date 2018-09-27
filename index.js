@@ -3,23 +3,29 @@ function theBeatlesPlay(arrayOfMusicians, arrayOfInstruments){
   for (let i = 0; i < arrayOfMusicians.length; i++){
     const currentMusician = arrayOfMusicians[i];
     const currentInstrument = arrayOfInstruments[i];
-    result.push(`${currentMusician} plays ${currentInstrument}`)
+    result.push(`${currentMusician} plays ${currentInstrument}`);
   }
-  return result
+  return result;
 }
 
 function johnLennonFacts (arrayOfFacts){
-  let i = 0
+  let result = [];
+  let i = 0;
   while (i < arrayOfFacts.length){
-    arrayOfFacts[i] += '!!!';
+    result.push(arrayOfFacts[i] += '!!!');
     i++;
   }
-  return arrayOfFacts
+  return result;
 }
 
 // function iLoveTheBeatles(n){
 //   let result = [];
-  
-// }
+//   let n = 0;
+//   do {
+//     result.push('I love the Beatles!');
+//   } while (n <= 8);
+//   n++;
+//   return result;
+}
 
 
